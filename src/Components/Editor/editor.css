@@ -1,0 +1,150 @@
+.editor-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.editor-bg {
+  background-color: #18181b;
+}
+
+.controls {
+  width: 390px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+}
+
+.controls > button {
+  background-color: #3a3a3d6f;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.controls > button > svg {
+  fill: white;
+}
+
+.controls > button:hover {
+  background-color: #3a3a3d6f;
+}
+
+/* interactive Positioned as 1st element */
+.react-flow__controls-interactive {
+  order: 1;
+  border-radius: 5px;
+}
+
+/* FitView Positioned as 2nd element */
+.react-flow__controls-fitview {
+  order: 2;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+/* Zoom Out button Positioned as 2nd last element */
+.react-flow__controls-zoomout {
+  order: 3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Zoom In button Positioned as last element */
+.react-flow__controls-zoomin {
+  order: 4;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mini-map {
+  width: min-content;
+  height: min-content;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #27272a;
+}
+
+/* remove reactflow watermark */
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__panel.top.right,
+.react-flow__panel.top.left {
+  background-color: transparent;
+  padding: 10px;
+  cursor: default;
+}
+
+.left-panel-button {
+  width: min-content;
+  background-color: #27272a;
+  gap: 5px;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.left-panel-button {
+  justify-content: center;
+  display: flex;
+}
+
+.left-panel-button > button {
+  border-radius: 8px;
+  padding: 10.5px;
+}
+
+.left-panel-button > button:hover {
+  background-color: #313134;
+  transition: 0.2s;
+}
+
+.left-panel-button svg {
+  font-size: 25px;
+  color: white;
+}
+
+.right-panel-button {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 5px;
+  border-radius: 8px;
+  color: black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.right-panel-button:hover {
+  background-color: #b2b2b2;
+  transition: 0.2s;
+}
+
+.right-panel-button:active {
+  background-color: #f5f4f4;
+  transition: 0.2s;
+}
+
+.right-panel-button > svg {
+  width: 25px;
+  height: 25px;
+}
+
+.right-panel-button > p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+@media all and (max-width: 500px) {
+  .mini-map {
+    display: none;
+  }
+  .controls {
+    width: min-content;
+  }
+}

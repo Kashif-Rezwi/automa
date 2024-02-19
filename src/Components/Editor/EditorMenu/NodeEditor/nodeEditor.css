@@ -1,0 +1,106 @@
+.node-navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 25px 0px;
+}
+
+.node-navigate svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.node-navigate > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.node-navigate > div > p {
+  font-weight: 500;
+}
+
+.node-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description,
+.interval,
+.url,
+.screenshot,
+.css-selecter {
+  width: 100%;
+}
+
+.description > div {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  transition: 0.2s;
+  padding: 8px 16px;
+  background-color: #313134;
+}
+
+.MuiInputBase-input::-webkit-scrollbar {
+  width: 0px;
+}
+
+.MuiInputBase-input::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.description > div:hover {
+  background-color: #39393d;
+  transition: 0.2s;
+}
+
+.description > div > textarea {
+  color: white;
+}
+
+.interval > div,
+.url > div,
+.css-selecter > div {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  transition: 0.2s;
+  background-color: #313134;
+}
+
+.screenshot-div {
+  width: 100%;
+}
+
+.screenshot-div > label {
+  position: relative;
+  font-size: 14px;
+  bottom: 3px;
+}
+
+.screenshot > div {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  transition: 0.2s;
+  background-color: #313134;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  color: white;
+  background-color: #313134;
+  border-radius: 0px;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list li:hover {
+  background-color: #1976d2;
+}
