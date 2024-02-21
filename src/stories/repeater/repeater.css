@@ -3,11 +3,13 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
+    top: auto !important;
+    left: auto !important;
 }
 
 .be-repeater-add-option-btn {
-    color: #ffffffb3;
-    /* color: #222; */
+    /* color: #ffffffb3; */
+    color: #666;
     font-size: 14px;
     font-weight: 500;
     display: flex;
