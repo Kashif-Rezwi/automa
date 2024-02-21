@@ -7,6 +7,7 @@ import { IoClose } from "react-icons/io5";
 import { BiPlus } from "react-icons/bi";
 import EditorMenu from "../../Components/Editor/EditorMenu/EditorMenu";
 import { AppContext } from "../../Context/AppContext";
+import { Button } from "../../stories/Button";
 
 function Home() {
   const { showSidebar, ref } = useContext(AppContext);
@@ -23,6 +24,7 @@ function Home() {
           <div>
             <BiPlus />
           </div>
+          <Button size="medium" backgroundColor={"red"} color={"#fff"} label="Log out" style={{borderRadius: "6px"}} />
         </div>
         <div
           className="editor-tab"

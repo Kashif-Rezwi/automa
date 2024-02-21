@@ -7,6 +7,8 @@ import { IconButton } from "@mui/material";
 import { BiFullscreen, BiMinus, BiPlus } from "react-icons/bi";
 import { AppContext } from "../../../../Context/AppContext";
 import { PiSidebarSimpleFill } from "react-icons/pi";
+import { Repeater } from "../../../../stories/repeater/Repeater";
+import { RepeaterOptions } from "../../RepeaterOptions";
 
 const nodes = [
   {
@@ -41,6 +43,8 @@ function Nodebar() {
   const { setShowSidebar, setShowDrawer, showSidebar, showDrawer, width } =
     useContext(AppContext);
 
+  const [value, setValue] = useState(["Item 1", "Item 2"])
+  
   return (
     <>
       <div className="nodes-header">
@@ -62,6 +66,18 @@ function Nodebar() {
           <input type="text" placeholder="Search... (ctrl+f)" />
         </div>
       </div>
+      <div>
+        <Repeater
+          value={value}
+          onChange={(newOption) => setValue(newOption)}
+        />
+      </div>
+      {/* <div>
+        <RepeaterOptions
+          value={value}
+          onChange={(newOption) => setValue(newOption)}
+        />
+      </div> */}
       <div className="nodes-content">
         <div className="nodes-type">
           <div>

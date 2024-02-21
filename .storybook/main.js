@@ -18,6 +18,7 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+    defaultName: 'Documentation',
   },
   staticDirs: ["../public"],
 };
